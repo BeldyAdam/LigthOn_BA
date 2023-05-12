@@ -1,3 +1,4 @@
+/* import JatekTer from "./JatekTer.js"; */
 class Lampa{
     #allapot;
     #id;
@@ -24,6 +25,15 @@ class Lampa{
         });
         
     }
+
+    kattintasTrigger(){
+
+        const esemeny = new CustomEvent("elem", {
+          detail: this,
+        });
+        window.dispatchEvent(esemeny);
+      
+}
 
 } 
 
